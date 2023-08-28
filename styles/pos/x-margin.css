@@ -1,3 +1,7 @@
+.margin-left-15percent{
+    margin-left: 15%;
+}
+
 .margin-left-22dot5percent{
     margin-left: 22.5%;
 }
@@ -9,9 +13,24 @@
     .margin-left-22dot5percent{
         margin-left: 5%;
     }
+    .margin-left-15percent{
+        margin-left: 5%;
+    }
 }
 
 /**/
+
+.margin-right-15percent{
+    margin-right: 15%;
+}
 .margin-right-22dot5percent{
     margin-right: 22.5%;
+}
+
+.margin-right-33percent{
+    margin-right: 33%;
+}
+
+.margin-right-75percent{
+    margin-right: 75%;
 }

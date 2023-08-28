@@ -2,11 +2,17 @@
     .div-underline{
         border-bottom: 1px solid white;
     }
+    .div-left-border{
+        border-left: 1px solid white;  
+    }
 }
 
 @media (prefers-color-scheme: light) {
     .div-underline{
         border-bottom: 1px solid black;
+    }
+    .div-left-border{
+        border-left: 1px solid black;  
     }
 }
 

@@ -29,3 +29,15 @@
 .justify-items-center{
     justify-items: center;
 }
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-spacebetween{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
