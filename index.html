@@ -2,90 +2,144 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/root/fonts.css">
-    <link rel="stylesheet" href="styles/root/text.css">
+    <link rel="stylesheet" href="styles/root/typo-size.css">
     <link rel="stylesheet" href="styles/root/background.css">
+    <!-- Header -->
     <link rel="stylesheet" href="styles/box/glassmorphism.css">
+    <link rel="stylesheet" href="styles/box/decoration.css">
+    <link rel="stylesheet" href="styles/box/padding.css">
+
+    <!-- Header -->
+    <link rel="stylesheet" href="styles/pos/absolute-pos.css">
+    <link rel="stylesheet" href="styles/pos/align.css">
+    <link rel="stylesheet" href="styles/pos/x-margin.css">
+    <link rel="stylesheet" href="styles/pos/y-margin.css">
+    <!-- Header -->
+    <link rel="stylesheet" href="styles/texts/fontsize.css">
+    <link rel="stylesheet" href="styles/texts/fontcolor.css">
+    <link rel="stylesheet" href="styles/texts/textdecoration.css">
 </head>
 <body class="background">
 <header>
-    <div><!-- Header -->
-        <div><!-- PFP -->
-            <img src="static/pfp/pfp1.jpg" style="filter: invert(1);">
+    <div class="textalign-center margin-top-3vh"><!-- Header -->
+        <div class="display-inlineblock"><!-- PFP -->
+            <img src="static/pfp/pfp1.jpg" height="120" width="120" class="borderradius-8px">
         </div>
-        <div><!-- Name -->
-            <div>
-                <span class="sanfrancisco-regular black-text">Jorge</span><span class="sanfrancisco-bold black-text">Álava</span>
+        <div class="display-inlineblock"><!-- Name -->
+            <div class="textalign-left">
+                <span class="sanfrancisco-regular black-text fs-3em">Jorge</span><span class="sanfrancisco-bold black-text fs-3em">Álava</span>
             </div>
-            <div>
-                <span class="sanfrancisco-regular black-text">Fernando</span>
+            <div class="textalign-left">
+                <span class="sanfrancisco-regular black-text fs-3em ">Fernando</span>
             </div>
         </div>
+    </div>
+    <br><br>
+    <div class="textalign-center black-text"><!-- Initial Cringe -->
+        <span class="sanfrancisco-rounded">Aquí va el cringe de lo mucho que me gustan los cacharros.</span>
     </div>
 </header>
-    <div><!-- Contact -->
-        <img src="static/icons/phone-call.png" title="Phone call by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">: 684083845</span>
-        <img src="static/icons/closed-envelope.png" title="Email by Ilham Fitrotul Hayat - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">: contacto@mail.jfalava.eu</span>
-        <img src="static/icons/pin.png" title="Pin by ChilliColor - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">: Zaragoza, Aragón</span>
+    <div class="textalign-center margin-top-2vh"><!-- Contact -->
+        <img src="static/icons/phone-call.png" title="Phone call by Freepik - Flaticon.com" width="28" height="28   "><span class="sanfrancisco-bold black-text fs-1dot5em">684083845</span>
+        <img src="static/icons/closed-envelope.png" title="Email by Ilham Fitrotul Hayat - Flaticon.com" width="28" height="28"><span class="sanfrancisco-bold black-text fs-1dot5em">contacto@mail.jfalava.eu</span>
+        <img src="static/icons/pin.png" title="Pin by ChilliColor - Flaticon.com" width="28" height="28"><span class="sanfrancisco-bold black-text fs-1dot5em">Zaragoza, Aragón</span>
     </div>
-    <div><!-- First Row -->
-        <div><!-- Skills -->
-            <div>
-                <img src="static/icons/knowledge.png" title="Knowledge by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Conocimientos y Herramientas</span>
-            </div>
-            <div>
-                <img src="static/icons/computer.png" title="Computer by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-regular black-text">Microinformática:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Windows, macOS, iOS</span>
-                <br>
-                <img src="static/icons/data-storage.png" title="Data storage by vectormarket15 - Flaticon.com" width="20" height="20"><span class="sanfrancisco-regular black-text">Sistemas:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Windows Server, Linux Server, IBMi</span>
-                <br>
-                <img src="static/icons/m365.svg" width="20" height="20"><span class="sanfrancisco-regular black-text">Microsoft 365:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Teams, Office, Sharepoint</span>
-                <br>
-                <img src="static/icons/monitoring.png" title="Monitoring by Eucalyp - Flaticon.com" width="20" height="20"><span class="sanfrancisco-regular black-text">Monitorización:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Nagios, Zabbix, Grafana</span>
-                <br>
-                <img src="static/icons/cloud-server.png" title="Cloud server by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-regular black-text">Cloud:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Azure, AWS, Cloudflare</span>
+    <div class="margin-left-22dot5percent margin-right-22dot5percent margin-top-2vh padding-4px glasbox-50"><!-- CV Content -->
+        <div class="    "><!-- Top Row-->
+            <div class=""><!-- Top Envelop -->
+                <div class="display-inlineblock verticalalign-top"> <!-- First Container -->
+                    <div class=""><!-- Workexp -->
+                        <div class="textalign-left margin-bottom-1vh">
+                            <img src="static/icons/market.png"  title="Market by GOWI - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Experiencia Laboral</span>
+                        </div>
+                        <div class="textalign-left">
+                            <span class="sanfrancisco-regular black-text">infoASI:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Prácticas para técnico de reparación de sistemas microinformáticos (junio de 2017)</span>
+                            <br>
+                            <span class="sanfrancisco-regular black-text">Hiberus:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Formación en centros de trabajo como módulo final de Administración de Sistemas Informáticos en Red (marzo de 2019 - junio de 2019)</span>
+                            <br>
+                            <span class="sanfrancisco-regular black-text">Seidor Consulting:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Operador HelpDesk (enero 2020 - actualidad)</span>
+                        </div>
+                    </div>
+                    <div class="div-underline margin-top-1vh margin-bottom-1vh margin-left-22dot5percent margin-right-22dot5percent"></div>
+                    <div class=""><!-- Academic -->
+                        <div class="textalign-left  margin-bottom-1vh">
+                            <img src="static/icons/graduate.png" title="Graduate by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Formación Académica</span>
+                        </div>
+                        <div class="textalign-left">
+                            <span class="sanfrancisco-regular black-text">Graduado en bachillerato de Ciencias y Tecnología en el IES Miguel Catalán (septiembre de 2014)</span>
+                            <br>
+                            <span class="sanfrancisco-regular black-text">Técnico de reparación de sistemas microinformáticos en la O.D. Santo Domingo de Silos / INAEM (junio de 2017)</span>
+                            <br>
+                            <span class="sanfrancisco-regular black-text">Técnico superior en Administración de Sistemas Informáticos en Red (junio de 2019)</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-inlineblock verticalalign-top"> <!-- Second Container -->
+                    <div class=""><!-- Skills -->
+                        <div class="">
+                            <img src="static/icons/knowledge.png" title="Knowledge by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Conocimientos y Herramientas</span>
+                        </div>
+                        <div class="">
+                            <div class="div-underline padding-4px">
+                                <img src="static/icons/computer.png" title="Computer by Freepik - Flaticon.com" width="20" height="20">
+                                <span class="sanfrancisco-regular black-text">Microinformática:</span>
+                                <br>
+                                <span class="sanfrancisco-rounded black-text">Windows, macOS, iOS</span>
+                            </div>
+                            <div class="div-underline padding-4px">
+                                <img src="static/icons/data-storage.png" title="Data storage by vectormarket15 - Flaticon.com" width="20" height="20"><span class="sanfrancisco-regular black-text">Sistemas:</span>
+                                <br>
+                                <span class="sanfrancisco-rounded black-text">Windows Server, Linux Server, IBMi</span>
+                            </div>
+                            <div class="div-underline padding-4px">
+                                <img src="static/icons/m365.svg" width="20" height="20"><span class="sanfrancisco-regular black-text">Microsoft 365:</span>
+                                <br>
+                                <span class="sanfrancisco-rounded black-text">Teams, Office, Sharepoint</span>
+                            </div>
+                            <div class="div-underline padding-4px">
+                                <img src="static/icons/monitoring.png" title="Monitoring by Eucalyp - Flaticon.com" width="20" height="20">
+                                <span class="sanfrancisco-regular black-text">Monitorización:</span>
+                                <br>
+                                <span class="sanfrancisco-rounded black-text">Nagios, Zabbix, Grafana</span>
+                            </div>
+                            <div class="div-underline padding-4px">
+                                <img src="static/icons/cloud-server.png" title="Cloud server by Freepik - Flaticon.com" width="20" height="20">
+                                <span class="sanfrancisco-regular black-text">Cloud:</span>
+                                <br>
+                                <span class="sanfrancisco-rounded black-text">Azure, AWS, Cloudflare</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div><!-- Workexp -->
-            <div>
-                <img src="static/icons/market.png" title="Market by GOWI - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Experiencia Laboral</span>
+        <div class="div-underline margin-top-1vh margin-bottom-1vh  margin-left-22dot5percent margin-right-22dot5percent"></div>
+        <div class="margin-top-2vh"><!-- Bottom Row -->
+            <div class="textalign-center"><!-- Certs -->
+                <div class="textalign-left margin-bottom-1vh">
+                    <img src="static/icons/certificate.png" title="Certificate by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Certificaciones Oficiales</span>
+                </div>
+                <div class="textalign-left">
+                    <span class="sanfrancisco-regular black-text">Oxford Test of English B2</span> <span class="sanfrancisco-rounded black-text">(abril de 2018)</span>
+                    <br>
+                    <span class="sanfrancisco-regular black-text">Remote Work and Virtual Collaboration - RWVCPC</span> <span class="sanfrancisco-rounded black-text">(noviembre 2021)</span>
+                    <br>
+                    <span class="sanfrancisco-regular black-text">Amazon Web Services - Practitioner Level</span> <span class="sanfrancisco-rounded black-text">(julio 2023)</span>
+                    </span>
+                </div>
             </div>
-            <div>
-                <span class="sanfrancisco-regular black-text">infoASI:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Prácticas para técnico de reparación de sistemas microinformáticos (junio de 2017)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Hiberus:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Formación en centros de trabajo como módulo final de Administración de Sistemas Informáticos en Red (marzo de 2019 - junio de 2019)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Seidor Consulting:</span>&nbsp;<span class="sanfrancisco-rounded black-text">Operador HelpDesk (enero 2020 - actualidad)</span>
+            <div class="div-underline margin-top-1vh margin-bottom-1vh margin-left-22dot5percent margin-right-22dot5percent"></div>
+            <div class="margin-top-2vh "><!-- More Cringe -->
+                <div class="textalign-left margin-bottom-1vh">
+                    <span class="sanfrancisco-bold black-text">Aptitudes Personales y Profesionales</span>
+                </div>
+                <div>
+                    <span class="sanfrancisco-rounded black-text">
+                        Aquí va el cringe de como de bueno soy.
+                    </span>
+                </div>
             </div>
-        </div>
-    </div>
-    <div><!-- Second Row -->
-        <div><!-- Academic -->
-            <div>
-                <img src="static/icons/graduate.png" title="Graduate by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Formación Académica</span>
-            </div>
-            <div>
-                <span class="sanfrancisco-regular black-text">Graduado en bachillerato de Ciencias y Tecnología en el IES Miguel Catalán (septiembre de 2014)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Técnico de reparación de sistemas microinformáticos en la O.D. Santo Domingo de Silos / INAEM (junio de 2017)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Técnico superior en Administración de Sistemas Informáticos en Red (junio de 2019)</span>
-                </span>
-            </div>
-        </div>
-        <div><!-- Certs -->
-            <div>
-                <img src="static/icons/certificate.png" title="Certificate by Freepik - Flaticon.com" width="20" height="20"><span class="sanfrancisco-bold black-text">Certificaciones Oficiales</span>
-            </div>
-            <div>
-                <span class="sanfrancisco-regular black-text">Oxford Test of English B2</span> <span class="sanfrancisco-rounded black-text">(abril de 2018)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Remote Work and Virtual Collaboration - RWVCPC</span> <span class="sanfrancisco-rounded black-text">(noviembre 2021)</span>
-                <br>
-                <span class="sanfrancisco-regular black-text">Amazon Web Services - Practitioner Level</span> <span class="sanfrancisco-rounded black-text">(julio 2023)</span>
-                </span>
-            </div>
-        </div>
-        <div><!-- Cringe -->
-            <span class="sanfrancisco-bold black-text">Aptitudes Personales y Profesionales</span>
         </div>
     </div>
 <footer>

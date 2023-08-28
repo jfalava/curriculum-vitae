@@ -1,0 +1,25 @@
+
+@media (prefers-color-scheme: light) {
+    a:link, a:visited {
+        color: rgb(24, 124, 225);
+    }
+    a:hover, .a:active {
+        color: rgb(24, 124, 255);
+        text-decoration: underline;
+    }
+    .black-text{
+        color: black;
+      }   
+  }
+  @media (prefers-color-scheme: dark) {
+    a:link, a:visited {
+        color: rgb(24, 124, 255);
+    }
+    a:hover, .a:active {
+        color: rgb(24, 124, 255);
+        text-decoration: underline;
+    }
+    .black-text{
+        color: white;
+      }    
+  }

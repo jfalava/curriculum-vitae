@@ -1,0 +1,31 @@
+.display-inlineblock{
+    display: inline-block;
+}
+
+.display-inline{
+    display: inline;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.flexwrap-wrap{
+    flex-wrap: nowrap;
+}
+
+.textalign-center{
+    text-align: center;
+}
+
+.textalign-left{
+    text-align: left;
+}
+
+.textalign-right{
+    text-align: right;
+}
+
+.justify-items-center{
+    justify-items: center;
+}
