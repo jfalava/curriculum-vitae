@@ -26,11 +26,13 @@
     <link rel="stylesheet" href="styles/texts/fontsize.css">
     <link rel="stylesheet" href="styles/texts/fontcolor.css">
     <link rel="stylesheet" href="styles/texts/textdecoration.css">
+    <!-- ~~~~ Title ~~~~ -->
+    <title>Jorge Fernando Álava</title>
 </head>
 <body class="background">
 <header>
     <div class="textalign-center margin-top-3vh"><!-- Header -->
-        <div class="display-inlineblock glassbox-25 padding-4px"><!-- PFP -->
+        <div class="display-inlineblock glassbox-25 padding-4px borderradius-8px"><!-- PFP -->
             <img src="static/pfp/pfp1.jpg" height="120" width="120" class="borderradius-8px">
         </div>
         <div class="display-inlineblock"><!-- Name -->
@@ -48,8 +50,12 @@
             Aquí va el cringe de lo mucho que me gusta la Tecnología.
         </span>
     </div>
+    <div class="captcha-widget textalign-center glassbox-25 margin-left-22dot5percent margin-right-22dot5percent margin-top-1vh padding-20px"> <!-- Captcha Service -->
+        <span class="fs-1em black-text productsans-bold ">Comprobando tu navegador antes de revelar la información de contacto, espera...</span><br><br>
+        <div id="turnstile-widget" class="turnstile-widget"></div>
+    </div>
 </header>
-    <div class="margin-top-2vh textalign-center"><!-- Contact -->
+    <div class="margin-top-2vh captcha-box textalign-center" style="display: none;"><!-- Contact -->
         <div class="display-inlineblock">
             <img src="static/icons/phone-call.png" title="Phone call by Freepik - Flaticon.com" width="28" height="28" style="vertical-align: -5px;">
             <span class="sanfrancisco-bold black-text fs-1dot5em">684083845</span>
@@ -185,5 +191,7 @@
 </div>
 <footer>
 </footer>
+<script src="static/scripts/turnstile-contactinfo.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
 </body>
 </html>
