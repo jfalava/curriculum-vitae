@@ -83,3 +83,9 @@
     src: url('../../static/fonts/hiragino-maru-gothic-pro.otf') format('opentype'),
          url('https://s3.jfalava.eu/static/fonts/hiragino-maru-gothic-pro.otf') format('opentype');
   }
+
+  @font-face {
+    font-family: 'newyork-regular';
+    src: url('../../static/fonts/newyork-regular.otf') format('opentype'),
+         url('https://s3.jfalava.eu/static/fonts/newyork-regular.otf') format('opentype');
+  }
