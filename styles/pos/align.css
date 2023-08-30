@@ -26,6 +26,18 @@
     text-align: right;
 }
 
+.textalign-justify{
+    text-align: justify;
+}
+
+.textalign-justify{
+    text-align: justify;
+}
+
+.text-justify-distribute{
+    text-justify: distribute;
+}
+
 .justify-items-center{
     justify-items: center;
 }
