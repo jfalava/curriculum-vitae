@@ -1,3 +1,11 @@
 .textdecoration-underline{
     text-decoration: underline;
 }
+
+.textalign-justify{
+    text-align: justify;
+}
+
+.text-justify-distribute{
+    text-justify: distribute;
+}
