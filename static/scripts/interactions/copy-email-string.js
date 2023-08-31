@@ -1,3 +1,4 @@
+// General
 function copyEmailToClipboard() {
     var email = document.getElementById('email-content').getAttribute('href').replace('mailto:', '');
     navigator.clipboard.writeText(email)
@@ -19,3 +20,4 @@ function copyEmailToClipboard() {
   });
 
   document.getElementById('emailImage').classList.add('img-inverter');
+
