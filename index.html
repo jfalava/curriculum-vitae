@@ -59,20 +59,27 @@
     <div class="textalign-center black-text"><!-- Initial Cringe -->
         <span class="sanfrancisco-bold fs-1dot25em">Administrador de Sistemas Informáticos en Red y Nube</span>
     </div>
-    <div class="captcha-widget textalign-center glassbox-25 margin-top-1vh padding-20px borderradius-8px"  style="display: none;"> <!-- Captcha Service -->
+    <div class="captcha-widget textalign-center glassbox-25 margin-top-1vh padding-20px borderradius-8px"> <!-- Captcha Service -->
         <span class="fs-1em black-text productsans-bold ">Comprobando tu navegador antes de revelar la información de contacto, espera...</span><br><br>
         <div id="turnstile-widget" class="turnstile-widget"></div>
     </div>
 </header>
-    <div class="margin-top-2vh captcha-box textalign-center"><!-- Contact -->
+    <div class="margin-top-2vh captcha-box textalign-center" style="display: none;"><!-- Contact -->
         <div class="display-inlineblock" style="display: none;" id="phone-number">
             <img src="static/icons/phone-call.png" title="Phone call by Freepik - Flaticon.com" width="28" height="28" style="vertical-align: -5px;">
             <span class="sanfrancisco-bold black-text fs-1dot5em">684083845</span>
         </div>
-        <div class="display-inlineblock">
+        <div class="display-inlineblock" id="trusted-email" style="display: none;">
             <img src="static/icons/closed-envelope.png" title="Email by Ilham Fitrotul Hayat - Flaticon.com" width="28" height="28" style="vertical-align: -6px;">
             <a id="email-content" href="mailto:contacto@mail.jfalava.eu">
                 <span class="sanfrancisco-bold black-text fs-1dot5em">contacto@mail.jfalava.eu</span>   
+            </a>
+            <img id="emailImage" src="static/icons/copy.png" width="17" height="17" class="cursor-pointer img-inverter" title="Click to Copy" style="vertical-align: 3px;">
+        </div>
+        <div class="display-inlineblock" id="general-email">
+            <img src="static/icons/closed-envelope.png" title="Email by Ilham Fitrotul Hayat - Flaticon.com" width="28" height="28" style="vertical-align: -6px;">
+            <a id="email-content" href="mailto:contacto@mail.jfalava.eu">
+                <span class="sanfrancisco-bold black-text fs-1dot5em">contact@mail.jfalava.eu</span>   
             </a>
             <img id="emailImage" src="static/icons/copy.png" width="17" height="17" class="cursor-pointer img-inverter" title="Click to Copy" style="vertical-align: 3px;">
         </div>
@@ -90,7 +97,7 @@
         <div class=""><!-- Top Row-->
             <div class=""><!-- Top Envelop -->
                 <div class="display-inlineblock verticalalign-top"> <!-- First Container -->
-                    <div class="width-85percent"><!-- Workexp -->
+                    <div class="width-85percent" id="workexp"><!-- Workexp -->
                         <div class="textalign-left margin-bottom-1vh cursor-default">
                             <img src="static/icons/market.png"  title="Market by GOWI - Flaticon.com" width="40" height="40" style="vertical-align: -8px;">
                             <span class="sanfrancisco-bold black-text fs-1dot5em">Experiencia Laboral</span>
@@ -132,7 +139,7 @@
                         </div>
                     </div>
                     <div class="div-underline margin-top-2vh margin-bottom-2vh margin-right-22dot5percent"></div>
-                    <div class="textalign-center"><!-- Certs -->
+                    <div class="textalign-center" id="certs"><!-- Certs -->
                         <div class="textalign-left margin-bottom-1vh cursor-default">
                             <img src="static/icons/certificate.png" title="Certificate by Freepik - Flaticon.com" width="40" height="40" style="vertical-align: -14px;">
                             <span class="sanfrancisco-bold black-text fs-1dot5em">Certificaciones Oficiales</span>
@@ -148,7 +155,7 @@
                 </div>
                 <div class="mobile-underline margin-top-2vh margin-bottom-2vh"></div>
                 <div class="display-inlineblock verticalalign-top right-0"> <!-- Second Container -->
-                    <div class="cursor-default"><!-- Skills -->
+                    <div class="cursor-default" id="skills"><!-- Skills -->
                         <div class="div-underline padding-bottom-10px">
                             <img src="static/icons/knowledge.png" title="Knowledge by Freepik - Flaticon.com" width="40" height="40" style="vertical-align: -12px;">
                             <span class="sanfrancisco-bold black-text fs-1dot5em">Conocimientos y Herramientas</span>
@@ -203,7 +210,7 @@
         </div>
         <div class="div-underline margin-top-3vh margin-bottom-3vh margin-bottom-1vh"></div>
         <div class="margin-top-2vh"><!-- Bottom Row -->
-            <div class="width-85percent"><!-- Academic -->
+            <div class="width-85percent" id="academic"><!-- Academic -->
                 <div class="textalign-left margin-bottom-1vh cursor-default">
                     <img src="static/icons/graduate.png" title="Graduate by Freepik - Flaticon.com"width="40" height="40" style="vertical-align: -13px;">
                     <span class="sanfrancisco-bold black-text fs-1dot5em">Formación Académica</span>
@@ -222,7 +229,7 @@
                     <img src="static/icons/aptitud-fisica.png" title="Aptitud Fisica by Prosymbols - Flaticon.com"width="40" height="40" style="vertical-align: -11px;">
                     <span class="sanfrancisco-bold black-text fs-1dot5em">Aptitudes Personales y Profesionales</span>
                 </div>
-                <div class="width-75percent textalign-left textalign-justify text-justify-distribute margin-left-3percent"><!-- Cringe Content -->
+                <div class="width-75percent textalign-left textalign-justify text-justify-distribute margin-left-3percent" id="cringe"><!-- Cringe Content -->
                     <span class="black-text fs-1em">
                         <span class="sanfrancisco-rounded">
                             El teletrabajo ha caracterizado gran parte de mi experiencia laboral; requiere una <span class="sanfrancisco-bold">disciplina y autonomía</span> que se ha convertido en una de mis principales habilidades.<br>
@@ -271,5 +278,6 @@
     <script src="static/scripts/interactions/trusted-link.js"></script>   
     <script src="static/scripts/interactions/totop.js"></script>       
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
+    <!-- ~~~~  ~~~~ -->
 </body>
 </html>
